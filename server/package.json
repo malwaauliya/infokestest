@@ -1,0 +1,30 @@
+{
+  "name": "infokes-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "type": "commonjs",
+  "scripts": {
+    "start": "tsc",
+    "dev": "nodemon --watch src --ext ts --exec tsx src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "joi": "^17.13.3",
+    "moment": "^2.30.1",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.7",
+    "@types/sequelize": "^4.28.20",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
