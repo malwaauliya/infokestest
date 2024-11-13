@@ -96,7 +96,7 @@ export default defineComponent({
         .then(response => {
           props.closeModal(); // Close the modal after submission
           console.log()
-          props.selectFolder(props.currentFolder); // Update folder view if needed
+          props.selectFolder(props.currentFolder && props.currentFolder.id ? props.currentFolder : null); // Update folder view if needed
         })
         .catch(error => {
           console.error("Error fetching folders:", error);
